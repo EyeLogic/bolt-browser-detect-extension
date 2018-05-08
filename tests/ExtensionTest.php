@@ -1,27 +1,27 @@
 <?php
 
-namespace Bolt\Extension\YourName\ExtensionName\Tests;
+namespace Bolt\Extension\EyeLogic\BrowserDetect\Tests;
 
 use Bolt\Tests\BoltUnitTest;
-use Bolt\Extension\YourName\ExtensionName\ExtensionNameExtension;
+use Bolt\Extension\EyeLogic\BrowserDetect\BrowserDetectExtension;
 
 /**
- * ExtensionName testing class.
+ * BrowserDetect testing class.
  *
  * @author Your Name <you@example.com>
  */
 class ExtensionTest extends BoltUnitTest
 {
     /**
-     * Ensure that the ExtensionName extension loads correctly.
+     * Ensure that the BrowserDetect extension loads correctly.
      */
     public function testExtensionBasics()
     {
         $app = $this->getApp(false);
-        $extension = new ExtensionNameExtension($app);
+        $extension = new BrowserDetectExtension($app);
 
         $name = $extension->getName();
-        $this->assertSame($name, 'ExtensionName');
+        $this->assertSame($name, 'BrowserDetectExtension');
         $this->assertInstanceOf('\Bolt\Extension\ExtensionInterface', $extension);
     }
 
