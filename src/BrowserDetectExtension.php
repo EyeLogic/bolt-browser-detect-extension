@@ -10,6 +10,7 @@ use Bolt\Extension\SimpleExtension;
  * @author Eye Logic B.V. <info@eyelogic.nl>
  */
 class BrowserDetectExtension extends SimpleExtension {
+
     protected function registerTwigFunctions()
     {
         return [
